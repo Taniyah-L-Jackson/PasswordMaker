@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(145, 0, 0), black);
+    color: rgb(172, 172, 172);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+/*Main Component END*/
+
+.box {
+    height: 700px;
+    width: 700px;
+    margin-top: 40px;
+    margin-left: 20%;
+    background: black;
+    border: 5px solid rgb(145, 0, 0);
+    text-align: center;
+}
+
+/*Box border END*/
+
+input {
+    border-color: red;
+    font-size: 20px;
+    color: black;
+}
+
+button {
+    border: 2px solid rgb(145, 0, 0);
+    background: rgb(145, 0, 0);
+    color: black;
+    display: inline;
+}
+
+/*form elements END*/
+
+.IntroTitle {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+/*Title END*/
+
+.passwordText {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+.confirm {
+    margin-top: 10px;
+    padding: 0px 76px;
+    font-size: 20px;
+}
+
+ul {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+li {
+    color: red;
+}
+/*First Box END*/
+
+#verifyPass {
+    opacity: 0;    
+}
+
+.fadeIn {
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+/*Second Box END*/
+
+@keyframes fade {
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Keyframes END*/
