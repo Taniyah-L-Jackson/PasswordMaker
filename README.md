@@ -6,5 +6,5 @@
   -A verification section appears after the password is created and asks the user to verify the password
   -A timer force closes the page when the user has failed verifying the password a set number of tries
 
-Built using HTML, CSS, and JS
+## Built using HTML, CSS, and JS
  
