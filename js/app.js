@@ -119,17 +119,24 @@ function verify () {
                 
                 if (sec <= 0) {
 
+                    //For github
+                    //----------------------------
                     // User is denied
                     box.style.display = 'none'
                     failed.style.display = 'block'
+                    //-----------------------------
+
+                    //For Download
+                    //----------------------------------
+                    // window.close() 
+                    //closes whenever the seconds are at or below 0
+                    //close site in 5 seconds (1000ms = 1s) 
+                    //---------------------------------
 
                     //stop timer from reaching negative values
                     clearInterval(timer) 
 
-                    // Special Feature: Use Only if Code is Downloaded
-                    // window.close() 
-                    //closes whenever the seconds are at or below 0
-                    //close site in 5 seconds (1000ms = 1s) 
+
                 }
             
             }, 1000) // time inbetween each second
