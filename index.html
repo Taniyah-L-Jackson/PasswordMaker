@@ -6,14 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Password Maker</title>
 </head>
 
 <body>  
 
     <div class="container">
 
-        <div class= 'box'>
+        <div class='failed' id='failed'>
+
+            <h1 class="glitch">ACCESS DENIED</h1>
+            <p class='overlay'>ACCESS DENIED</p>
+            <!-- hidden until called -->
+
+        </div>
+
+        <div class='box' id='box'>
 
             <div class="row">
 
@@ -53,7 +61,7 @@
                     <h3 id='entry'>WARNING: Only 5 tries allowed</h3>
 
                     <input type="password" id="match">
-                    <button onclick="verify()">Submit</button>
+                    <button onclick="verify()" id='verify' >Submit</button>
                     
                 </div>
             </div>

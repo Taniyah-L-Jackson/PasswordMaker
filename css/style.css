@@ -3,6 +3,7 @@
 }
 
 body {
+    width: 100%;
     background: linear-gradient(90deg, rgb(145, 0, 0), black);
     color: rgb(172, 172, 172);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -82,7 +83,51 @@ li {
     animation-fill-mode: forwards;
 }
 
+
+
 /*Second Box END*/
+
+.failed {
+    margin-top: 35%;
+    margin-left: -10%;
+}
+
+.glitch {
+    position: absolute;
+    left: 28%;
+    bottom: 42%;
+    color:rgb(76, 175, 80);
+    font-size: 70px;
+    text-align: center;
+    text-shadow: -10px 1px 1px purple;
+    animation-name: flash;
+    animation-iteration-count: infinite;
+    animation-duration: 0.7s;
+}
+
+.overlay {
+    position: absolute;
+    left: 28%;
+    bottom: 42%;
+    color: white;
+    font-size: 70px;
+    text-shadow: 8px 4px 1px blue;
+    animation-name: flash;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+}
+
+/* Glitch END */
+
+@keyframes flash { 
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 @keyframes fade {
     100% {
